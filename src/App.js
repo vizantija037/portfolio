@@ -15,13 +15,13 @@ function App() {
       <div>
         <Header />
         <Switch>
-          <Route  path="/" exact component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/projects" exact component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects/project1" component={Project1} />
-          <Route path="/projects/project2" component={Project2} />
-          <Route path="/projects/project3" component={Project3} />
-          <Route path="/projects/project4" component={Project4} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/projects/project1" exact component={Project1} />
+          <Route path="/projects/project2" exact component={Project2} />
+          <Route path="/projects/project3" exact component={Project3} />
+          <Route path="/projects/project4" exact component={Project4} />
         </Switch>
         <Footer/>
       </div>
