@@ -1,0 +1,11 @@
+.cardsRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    flex-direction: row;
+    z-index: 0;
+    flex-wrap: wrap;
+    
+}
