@@ -24,6 +24,7 @@ function MailForm() {
           console.log(error.text);
         }
       );
+      alert("\n\n MESSAGE SENT");
       e.target.reset();
   }
   return (

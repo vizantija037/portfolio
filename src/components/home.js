@@ -6,6 +6,8 @@ import home1 from "../images/home1.jpg";
 import { Link } from "react-router-dom";
 import Cards from './cards';
 
+import ResponsivePie from '@nivo/pie';
+
 function Home() {
   const [isActive, setActive] = useState(true);
   const ToggleClass = () => {
@@ -37,7 +39,10 @@ function Home() {
         </div>
       </div>
       <div className={classes.row}>
-      <h1>My Learning Timeline</h1>
+      <h1>Hands On</h1>
+      <div className={classes.row}>
+        
+      </div>
       </div>
     </div>
   );
