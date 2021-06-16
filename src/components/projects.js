@@ -13,6 +13,7 @@ function Projects() {
       <div className={classes.cardsRow}>
         {cards.map((card) => (
           <Cards
+            key={card.heading}
             heading={card.heading}
             image={card.image}
             description={card.description}

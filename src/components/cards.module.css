@@ -6,7 +6,7 @@
 .cardFrame {
     display: flex;
     width: 48%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     border-radius: 20px;
@@ -24,18 +24,19 @@
     
 }
 .leftCard {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;;
 }
 .rightCard {
-    width: 50%;
+    width: 60%;
     display: flex;
-    flex-direction: column;    min-height: 200px;
+    flex-direction: column;    
+    min-height: 200px;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     min-height: 180px;
 }
 .buttonDiv {
@@ -52,7 +53,7 @@
     transition: all 0.2s ease;
 }
 .imageProps {
-    width: 80%;
+    width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.308);
     
 }
@@ -118,18 +119,21 @@
 @media (max-width:1100px) {
     .cardFrame {
         display: flex;
-        width: 80%;
+        width: 90%;
     }
     .cardDescription p {
         text-align: center;
     }
-
+    .buttonDiv {
+        padding-top:0;
+    }
 
 }
 @media (max-width:900px) {
     .cardButton {
         width: 60%;
     }
+
 }
 @media (max-width:600px) {
     .cardDescription p {
@@ -148,5 +152,8 @@
     }
     .cardButton {
         width: 100%;
+    }
+    .rightCard{
+        min-height: 100px;
     }
 }

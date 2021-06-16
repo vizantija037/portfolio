@@ -146,11 +146,7 @@ p {
         padding:200px;
         transition: all 0.6s ease;
         left: -120%;
-
-
     }
-
-
     .listHeader li {
         position: relative;
         display: block;
@@ -166,10 +162,10 @@ p {
     .listHeader li:hover{
         transform:scale(1.1);
     } 
-
     a{
         display: block;
         padding: 20px;
+        margin: 0;
     }
     
 .burger {
@@ -193,5 +189,18 @@ p {
     }
     .logo span {
         font-size: 30px;
+    }
+    .flexHeader, .fixedHeader {
+        height: 120px;
+    }
+    .burger {
+        width: 30px;
+        height: 30px;
+    }
+    .logo, .logo span {
+        transform: scale(0.85);
+    }
+    .listHeader {
+        padding:80px 0; 
     }
 }

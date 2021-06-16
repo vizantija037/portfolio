@@ -88,3 +88,10 @@ input:focus, textarea:focus {
     background-color: rgba(39, 38, 38, 0.8);
     box-shadow: 0 0 6px red;
 }
+@media (max-width:800px) {
+    .row {
+        padding: 20px 0;
+
+    }
+
+}
