@@ -1,0 +1,77 @@
+.timelineContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.iconsTimeline {
+    width: 28px;
+    height: auto;
+    display: flex;
+    align-self: center;
+    margin-left: 27%;
+}
+
+h3 {
+    font-size: 18px;
+    padding-top: 0.25em;
+    color:rgb(83, 83, 83);
+    font-weight: 600;
+}
+h5 {
+    font-size: 14px;
+    color:rgb(83, 83, 83);
+    font-weight: 600;
+}
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 2em 3em !important;
+  }
+  
+
+  #description {
+    margin: 1.8em 0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 0;
+    font-size: 14px;
+  }
+  
+  .workButton {
+    background-color: rgb(107, 138, 197);
+  }
+  
+  .workButton:hover {
+    background-color: rgb(69, 91, 131);
+  }
+  
+  .schoolButton {
+    background-color: #e4894d;
+  }
+  
+  .schoolButton:hover {
+    background-color: #b66835;
+  }
+
+
+@media (max-width:1170px) {
+    .iconsTimeline {
+        width: 24px;
+        margin-left: 20%;
+    }
+}

@@ -3,30 +3,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 10px 0;
     flex-direction: row;
     z-index: 0;
     flex-wrap: wrap;
 }
-.leftContact {
-    display: flex;
-    width:50%;
-    justify-content:center;
-    align-items:center;
-    flex-direction: column;
-}
 .rightContact {
     display: flex;
-    width:50%;
+    width:35%;
     justify-content:center;
     align-items:center;
     flex-direction: column;
 
 }
+.contactInfo {
+    display: flex;
+    width: 100%;  
+}
 .map {
     display: flex;
     border: none;
-    width: 100%;
+    width: 65%;
     filter: grayscale(80%);  
     transition: all 0.2s ease-in-out;
     border-radius: 20px;
@@ -44,10 +41,31 @@
     box-shadow: 0 0 15px black;
     filter: grayscale(0%); 
 }
+.icon {
+    font-size: 30px;
+    background-color: rgb(184, 78, 8);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.contactInfo {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.spanData {
+    display: flex;
+    line-height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 10%;
+    padding-right: 15px;
+}
 
 @media (max-width:1000px){
-    .leftContact {
+    .map {
         width:100%;
       
     }
@@ -68,4 +86,37 @@
         height: 300px;
         border-radius: 20px;
     }
+    .contactInfo {
+        display: flex;
+        width: 100%;
+        justify-content:space-around;
+        align-items: center;
+    }
+    
+    .spanData {
+        display: flex;
+        line-height: 80px;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 10%;
+        padding-right: 15px;
+    }
    }
+   @media (max-width:600px) {
+   .contactInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.spanData {
+    display: flex;
+    line-height: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-right:0;
+}
+}
